@@ -14,7 +14,7 @@ class Block {
     Text title
     Accessory accessory
     @JsonInclude(JsonInclude.Include.NON_EMPTY)
-    def elements = []
+    List<Element> elements = []
 
     void accessory(Closure closure) {
         closure.resolveStrategy = Closure.DELEGATE_FIRST

@@ -6,9 +6,9 @@ import com.fasterxml.jackson.annotation.JsonInclude
 class Message {
 
   @JsonInclude(JsonInclude.Include.NON_EMPTY)
-  def attachments = []
+  List<Attachment> attachments = []
   @JsonInclude(JsonInclude.Include.NON_EMPTY)
-  def blocks = []
+  List<Block> blocks = []
   String channel
   String iconUrl
   String iconEmoji
